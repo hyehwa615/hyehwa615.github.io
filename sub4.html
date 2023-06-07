@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SUB 4</title>
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./footer.css">
+  <style>
+    @font-face {
+      font-family: 'SUITE-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    body {
+      text-align: center;
+      font-family: 'SUITE-Regular';
+    }
+
+    .cards {
+      max-width: 80%;
+      height: 70%;
+      margin: 0 auto;
+      padding-top: 10%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .cards .card__item {
+      border: solid 1.5px #000;
+      background-color: var(--white);
+      width: 20rem;
+      min-height: 29rem;
+      border-radius: 15px;
+      display: inline-block;
+      margin: 1rem;
+    }
+
+    .cards .card__item--info:hover .card__img img {
+      transform: scale(1.1);
+      transform-origin: center;
+    }
+
+    .cards .card__item--info .card__img {
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+      overflow: hidden;
+    }
+
+    .cards .card__item--info .card__img img {
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s ease-in;
+    }
+
+    .cards .card__item--image {
+      overflow: hidden;
+      color: #fff;
+      background-color: #000;
+    }
+
+    .cards .card__item--image:hover .card__content {
+      transform: scale(1.1);
+      transform-origin: center;
+    }
+
+    .cards .card__item--image .card__content {
+      height: 100%;
+      transition: all 0.3s ease-in;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .cards .card__item--image .card__content--1 {
+      background-image: linear-gradient(to bottom,
+          rgba(var(--black), 0.93) 0%,
+          rgba(var(--black), 0.83) 25%,
+          transparent 100%),
+        url("");
+    }
+
+    .cards .card__item--image .card__content--2 {
+      background-image: linear-gradient(to bottom,
+          rgba(var(--black), 0.93) 0%,
+          rgba(var(--black), 0.83) 25%,
+          transparent 100%),
+        url("");
+    }
+
+    .card__content--3 {
+      background-image: linear-gradient(to bottom,
+          rgba(var(--black), 0.93) 0%,
+          rgba(var(--black), 0.83) 25%,
+          transparent 100%),
+        url("");
+    }
+
+    .card__content--4 {
+      background-image: linear-gradient(to bottom,
+          rgba(var(--black), 0.93) 0%,
+          rgba(var(--black), 0.83) 25%,
+          transparent 100%),
+        url("");
+    }
+
+    .card__content--5 {
+      background-image: linear-gradient(to bottom,
+          rgba(var(--black), 0.93) 0%,
+          rgba(var(--black), 0.83) 25%,
+          transparent 100%),
+        url("");
+    }
+
+    .card__title {
+      font-weight: 500;
+      color: var(--white);
+      padding: 1.8rem 0 0;
+    }
+
+    .card.active {
+      border: 1px solid var(--white);
+      box-shadow: 0 0 16px -3px rgba(255, 255, 255, 0.626);
+    }
+
+    .card__content {
+      padding: 0rem 1.2rem 2.4rem;
+      text-align: justify;
+    }
+
+    .card__img {
+      border-radius: 10px;
+      height: 13rem;
+    }
+
+    .card__title {
+      font-size: 1.2rem;
+    }
+
+    .card__signature {
+      font-size: 1rem;
+      position: relative;
+      float: right;
+    }
+
+    .card__signature::before {
+      content: "";
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      height: 1.3px;
+      margin-right: 0.3rem;
+      width: 2.4rem;
+      background-color: #010101;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <div class="header">
+    <ul>
+      <li class="logo"><a href="index.html"><img src="panda.png" width="70px"></a></li>
+      <li><a href="sub1.html">판다.。</a></li>
+      <li><a href="sub2.html">판다 월드.。</a></li>
+      <li><a href="sub3.html">판다 월드 멤버.。</a></li>
+      <li><a href="sub4.html">판다 티엠아이.。</a></li>
+      <li><a href="sub5.html">판다 갤러리.。</a></li>
+    </ul>
+  </div>
+  <!-- 섹션 -->
+  <div class="cards">
+    <div class="card__item card__item--info">
+      <div class="card__img">
+        <img src="panda_1.jpg" />
+      </div>
+      <div class="card__content">
+        <h3 class="card__title"><b>판다는 곰이 맞을까?</b></h3>
+        <br>
+        판다는 곰과 너구리의 특징을 모두 갖고 있기 때문에 곰과냐, 너구리과에
+        대하여 수십 년 동안 논의가 있었습니다. <br>
+        하지만 DNA 연구에 따라 곰과에 속한다는 것으로 최종적으로 밝혀졌습니다.
+        </p>
+      </div>
+    </div>
+    <div class="card__item card__item--image">
+      <div class="card__content card__content--1">
+        <h3 class="card__title">
+          <b>판다도 겨울 잠을 잘까?</b><br>
+          <br>
+          겨울 잠은 먹이가 부족한 겨울을 극복하기 위한 방법이지만, 판다가 주식으로 먹는 대나무는
+          겨울에도 시들지 않으므로 동면할 필요가 없습니다.
+        </h3>
+      </div>
+    </div>
+    <div class="card__item card__item--info">
+      <div class="card__img">
+        <img src="panda_2.jpg" />
+      </div>
+      <div class="card__content">
+        <h3 class="card__title"><b>판다는 왜 귀여워 보일까?</b></h3>
+        <br>
+        <p class="card__text">
+          다른 동물들은 몸집이 커 가면서 머리 비율이 작아지고
+          주둥이가 길어지지만 판다는 어른이 되어도 머리 비율이 크고
+          둥근 얼굴이기 때문에 항상 귀여워 보입니다. <br>
+          눈 코 입이 아래쪽에 모여 있는 것도 귀여움의 한 요소!
+        </p>
+      </div>
+    </div>
+    <div class="card__item card__item--image">
+      <div class="card__content card__content--2">
+        <h3 class="card__title">
+          <b>판다는 어떻게 울지?</b><br>
+          <br>
+          판다는 곰처럼 포효하지 않고 <br>
+          매애― 낑낑― 하고 웁니다. <br>
+          판다 월드에 오셔서 판다가 오는지 잘 들어 보세요.
+        </h3>
+      </div>
+    </div>
+    <div class="card__item card__item--info">
+      <div class="card__img">
+        <img src="panda_3.jpg" />
+      </div>
+      <div class="card__content">
+        <h3 class="card__title"><b>판다는 나무 타기 명수!</b></h3><br>
+        <p class="card__text">
+          판다는 나무 타기가 특기입니다. 야생에서는 천적으로부터 피하기 위해
+          나무에 올라가 있었습니다.
+          나무에 올라가 있는 모습은 야생 또는 사육 환경에서도 잘 볼 수 있습니다.
+        </p>
+      </div>
+    </div>
+    <div class="card__item card__item--image">
+      <div class="card__content card__content--3">
+        <h3 class="card__title">
+          <b>판다 발가락의 비밀!</b><br>
+          <br>
+          판다 앞발에는 5개의 발가락 외에 <br>
+          가짜 엄지가 있어 대나무를 쥐고 먹는 데에 편리하게 이용합니다.
+        </h3>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- 푸터 -->
+  <footer>
+    <br><br>
+    Copyright ⓒ2023 PANDA ZZANG rights reserved</footer>
+</body>
+
+</html>

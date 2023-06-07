@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SUB 3</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <style>
+        @font-face {
+            font-family: 'SUITE-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'SUITE-Regular';
+        }
+
+        .content {
+            max-width: 1024px;
+            width: 100%;
+            padding: 0 4%;
+            padding-top: 90px;
+            margin: 135px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 767px) {
+            .content {
+                padding-top: 300px;
+                flex-direction: column;
+            }
+        }
+
+        .card {
+            width: 100%;
+            max-width: 300px;
+            min-width: 200px;
+            height: 250px;
+            background-color: #000;
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid rgba(7, 7, 7, 0.12);
+            font-size: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .icon1 {
+            margin: 0 auto;
+            width: 100%;
+            height: 80px;
+            max-width: 80px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: all 0.8s ease;
+        }
+
+        .icon2 {
+            margin: 0 auto;
+            width: 100%;
+            height: 80px;
+            max-width: 80px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: all 0.8s ease;
+        }
+
+        .icon3 {
+            margin: 0 auto;
+            width: 100%;
+            height: 80px;
+            max-width: 80px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: all 0.8s ease;
+        }
+
+        .card .title {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            margin-top: 30px;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .card .text {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 13px;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            font-weight: 200;
+            letter-spacing: 2px;
+            opacity: 0;
+            max-height: 0;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            height: 270px;
+        }
+
+        .card:hover .info {
+            height: 90%;
+        }
+
+        .card:hover .text {
+            transition: all 0.3s ease;
+            opacity: 1;
+            max-height: 40px;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div class="header">
+        <ul>
+            <li class="logo"><a href="index.html"><img src="panda.png" width="70px"></a></li>
+            <li><a href="sub1.html">판다</a></li>
+            <li><a href="sub2.html">판다 월드</a></li>
+            <li><a href="sub3.html">판다 월드 멤버</a></li>
+            <li><a href="sub4.html">판다 티엠아이</a></li>
+            <li><a href="sub5.html">판다 갤러리</a></li>
+        </ul>
+    </div>
+
+    <!-- about -->
+    <div class="content">
+        <div class="card">
+
+            <div class="icon1"><a href="bao1.html"><img src="rubao.jpg"></a></div>
+            <p class="title">러바오</p>
+            <p class="text">기쁨을 주는 보물</p>
+
+        </div>
+        <div class="card">
+
+            <div class="icon2"><a href="bao2.html"><img src="fubao.jpg"></a></div>
+            <p class="title">푸바오</p>
+            <p class="text">행복을 주는 보물</p>
+
+        </div>
+        <div class="card">
+
+            <div class="icon3"><a href="bao3.html"><img src="aibao.jpg"></a></div>
+            <p class="title">아이바오</p>
+            <p class="text">사랑스러운 보물</p>
+
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <br><br>
+        Copyright ⓒ2023 PANDA ZZANG rights reserved</footer>
+</body>
+
+</html>

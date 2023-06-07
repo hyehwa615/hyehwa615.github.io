@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>INDEX</title>
+  <link rel="stylesheet" href="./footer.css">
+
+  <style>
+    @font-face {
+      font-family: 'SUITE-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0px;
+      text-align: center;
+      font-family: 'SUITE-Regular';
+    }
+
+    #container {
+      color: #000000;
+      text-transform: uppercase;
+      font-size: 35px;
+      font-weight: bold;
+      padding-top: 200px;
+      position: fixed;
+      width: 100%;
+      bottom: 45%;
+      display: block;
+    }
+
+    #flip {
+      height: 50px;
+      overflow: hidden;
+    }
+
+    #flip>div>div {
+      color: #fff;
+      padding: 4px 12px;
+      height: 45px;
+      margin-bottom: 45px;
+      display: inline-block;
+    }
+
+    #flip div:first-child {
+      animation: show 5s linear infinite;
+    }
+
+    #flip div div {
+      background: #000000;
+    }
+
+    #flip div:first-child div {
+      background: #000000;
+    }
+
+    #flip div:last-child div {
+      background: #000000;
+    }
+
+    @keyframes show {
+      0% {
+        margin-top: -270px;
+      }
+
+      5% {
+        margin-top: -180px;
+      }
+
+      33% {
+        margin-top: -180px;
+      }
+
+      38% {
+        margin-top: -90px;
+      }
+
+      66% {
+        margin-top: -90px;
+      }
+
+      71% {
+        margin-top: 0px;
+      }
+
+      99.99% {
+        margin-top: 0px;
+      }
+
+      100% {
+        margin-top: -270px;
+      }
+    }
+
+    p {
+      width: 100%;
+      font-size: 12px;
+      color: #999;
+      margin-top: 150px;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id=container>
+    <p>♥ ♡ ♥ ♡ ♥ ♡ ♥ ♡ ♥</p>
+    <div id=flip>
+      <div>
+        <div>귀여운</div>
+      </div>
+      <div>
+        <div>깜찍한</div>
+      </div>
+      <div>
+        <div>귀여운</div>
+      </div>
+    </div>
+    판다 이야기 <br>
+    <a href="sub1.html"><img src="panda_index.png" width="100px"></a>
+  </div>
+  <footer>
+    <br><br>
+    Copyright ⓒ2023 PANDA ZZANG rights reserved</footer>
+</body>
+
+</html>

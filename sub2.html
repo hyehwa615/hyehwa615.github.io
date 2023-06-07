@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SUB 2</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <style>
+        @font-face {
+            font-family: 'SUITE-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        body {
+            font-size: 16px;
+        }
+
+        p {
+            line-height: 150%;
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        h1 {
+            font-family: 'SUITE-Regular';
+            letter-spacing: 1.5px;
+            color: white;
+            font-weight: 400;
+            font-size: 2.4em;
+        }
+
+        #timeline-content {
+            margin-top: 110px;
+            text-align: center;
+        }
+
+        /* Timeline */
+        .timeline {
+            border-left: 4px solid #999;
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;
+            background: #000;
+            color: #fff;
+            font-family: 'SUITE-Regular';
+            margin: 135px auto;
+            letter-spacing: 0.5px;
+            position: relative;
+            line-height: 1.4em;
+            font-size: 1.03em;
+            padding: 50px;
+            list-style: none;
+            text-align: left;
+            font-weight: 100;
+            max-width: 30%;
+            border-radius: 10px;
+        }
+
+        .timeline h1 {
+            letter-spacing: 1.5px;
+            font-weight: 100;
+            font-size: 1.4em;
+        }
+
+        .timeline h2,
+        .timeline h3 {
+            letter-spacing: 1.5px;
+            font-weight: 400;
+            font-size: 1.4em;
+        }
+
+        .timeline .event {
+            border-bottom: 1px dashed #999;
+            padding-bottom: 25px;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .timeline .event:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+        }
+
+        .timeline .event:before,
+        .timeline .event:after {
+            position: absolute;
+            display: block;
+            top: 0;
+        }
+
+        .timeline .event:before {
+            left: -217.5px;
+            color: #000;
+            content: attr(data-date);
+            text-align: right;
+            font-weight: 100;
+            font-size: 0.9em;
+            min-width: 120px;
+        }
+
+        .timeline .event:after {
+            box-shadow: 0 0 0 4px #999;
+            left: -57.85px;
+            background: #fff;
+            border-radius: 50%;
+            height: 11px;
+            width: 11px;
+            content: "";
+            top: 5px;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div class="header">
+        <ul>
+            <li class="logo"><a href="index.html"><img src="panda.png" width="70px"></a></li>
+            <li><a href="sub1.html">판다</a></li>
+            <li><a href="sub2.html">판다 월드</a></li>
+            <li><a href="sub3.html">판다 월드 멤버</a></li>
+            <li><a href="sub4.html">판다 티엠아이</a></li>
+            <li><a href="sub5.html">판다 갤러리</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <ul class="timeline">
+        <li class="event" data-date="2016">
+            <h3>판다 월드 설립</h3>
+            <p>에버랜드가 개장 40주년 기념과 국제적인 판다 공동 연구 기관으로 참여하여 설립한 시설이다. </p>
+        </li>
+        <li class="event" data-date="2016">
+            <h3>러바오·아이바오 한국 도착</h3>
+            <p>대한민국에서 유일하게 판다를 볼 수 있는 곳으로 에버랜드에서 22년 만에 멸종위기종인 판다 한쌍을 다시 들여와서 전시하기 시작했다.</p>
+        </li>
+        <li class="event" id="date" data-date="2020">
+            <h3>푸바오 탄생</h3>
+            <p></p>
+            <p>2020년 러바오와 아이바오의 합사가 이루어졌다. 7월 20일, 아이바오가 오랜 진통 끝에 푸바오를 출산하는데 성공했다. 📣</p>
+        </li>
+
+        <li class="event" data-date="2023">
+
+            <h3>현재의 판다 월드 🐼</h3>
+            <p>2021년 7월 20일에 첫 돌을 맞아 푸바오의 돌잔치가 열렸고 에버랜드 유튜브 채널을 통해 방송되었다.
+                <p />
+                <p>2022년 8월 31일, 어미 아이바오를 떠나 독립하게 되었고, 이후 같은 해인 2022년 11월 1일, 사육사로부터도 독립하게 되었다.</p>
+
+                <p><strong>현재로서 푸바오는 외형만 봐서는 거의 완전히 성체로 성장해 가는 단계이다!</strong></p>
+
+        </li>
+    </ul>
+    </div>
+
+    <footer>
+        <br><br>
+        Copyright ⓒ2023 PANDA ZZANG rights reserved</footer>
+</body>
+
+</html>

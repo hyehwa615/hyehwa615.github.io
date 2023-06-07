@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUB 3_3</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <style>
+        @font-face {
+            font-family: 'SUITE-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            overflow: hidden;
+            background-size: cover;
+            position: fixed;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-family: 'SUITE-Regular';            
+        }
+
+        h1,
+        h2 {
+            font-weight: 500;
+            margin: 0px 0px 5px 0px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
+            margin: 10px;
+            text-align: justify;
+            color: #fff;
+        }
+        
+        img {
+            border-radius: 10px;
+        }
+
+        .profile-card {
+            width: 50px;
+            height: 156px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 2;
+            overflow: hidden;
+            opacity: 0;
+            margin-top: 50px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            animation: init 1.5s 0.2s cubic-bezier(0.55, 0.055, 0.275, 0.19) forwards, materia 0.5s .9s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+        }
+
+        .profile-card header {
+            width: 160px;
+            height: 180px;
+            display: inline-block;
+            border-right: 2px dashed #EEEEEE;
+            background: #000;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .profile-card header h1 {
+            color: #fff;
+        }
+
+        .profile-card header a {
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            margin: -15px 20px;
+        }
+
+        .profile-card header a>img {
+            max-width: 100%;
+        }
+
+        .profile-card .profile-bio {
+            width: 70%;
+            height: 70%;
+            line-height: 170%;
+            display: inline-block;
+            background: #000;
+            padding: 0px 0px 10px 0px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        @keyframes init {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+
+            100% {
+                width: 36px;
+                height: 36px;
+                margin-top: 0px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes materia {
+            0% {
+                background: #000;
+            }
+
+            50% {
+                border-radius: 10px;
+            }
+
+            100% {
+                width: 500px;
+                height: 300px;
+                background: #000;
+                border-radius: 10px;
+            }
+        }
+
+        @keyframes moveIn {
+            0% {
+                margin-top: 50px;
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+                margin-top: -20px;
+            }
+        }
+
+        @media screen and (min-aspect-ratio: 4/3) {
+            body {
+                background-size: cover;
+            }
+
+            body:before {
+                width: 0px;
+            }
+
+            @-webkit-keyframes puff {
+                0% {
+                    top: 100%;
+                    width: 0px;
+                    padding-bottom: 0px;
+                }
+
+                100% {
+                    top: 50%;
+                    width: 100%;
+                    padding-bottom: 100%;
+                }
+            }
+
+            @keyframes puff {
+                0% {
+                    top: 100%;
+                    width: 0px;
+                    padding-bottom: 0px;
+                }
+
+                100% {
+                    top: 50%;
+                    width: 100%;
+                    padding-bottom: 100%;
+                }
+            }
+
+            @media screen and (max-width: 460px) {
+                .profile-card header {
+                    width: auto;
+                    height: auto;
+                    display: block;
+                    float: none;
+                    border-right: none;
+                }
+
+                .profile-card header a>img {
+                    width: 150px;
+                }
+
+                .profile-card .profile-bio {
+                    width: auto;
+                    height: auto;
+                    display: block;
+                    float: none;
+                }
+            }
+
+            @keyframes materia {
+                0% {
+                    background: #000;
+                }
+
+                50% {
+                    border-radius: 4px;
+                }
+
+                100% {
+                    width: 40%;
+                    height: 40%;
+                    background: #000;
+                    border-radius: 4px;
+                }
+            }
+
+            @media screen and (max-width: 360px) {
+
+                .profile-card header a>img {
+                    width: 100px;
+                }
+
+                .profile-card .profile-bio {
+                    width: auto;
+                    height: auto;
+                    display: block;
+                    float: none;
+                }
+
+                @keyframes materia {
+                    0% {
+                        background: #000;
+                    }
+
+                    50% {
+                        border-radius: 4px;
+                    }
+
+                    100% {
+                        width: 40%;
+                        height: 40%;
+                        background: #000;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+        
+        
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	margin-top: auto;
+}
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div class="header">
+        <ul>
+            <li class="logo"><a href="index.html"><img src="panda.png" width="70px"></a></li>
+            <li><a href="sub1.html">판다</a></li>
+            <li><a href="sub2.html">판다 월드</a></li>
+            <li><a href="sub3.html">판다 월드 멤버</a></li>
+            <li><a href="sub4.html">판다 티엠아이</a></li>
+            <li><a href="sub5.html">판다 갤러리</a></li>
+        </ul>
+    </div>
+    <aside class="profile-card">
+        <header>
+            <a><img src="aibao1.jpg" width="100px"></a>
+            <h1>아이바오</h1>
+            <h2>9세</h2>
+        </header>
+        <div class="profile-bio">
+            <p>2013년 7월 13일에 중국에서 수컷 판다 루루와 암컷 판다 신니얼 사이에서 태어난 자이언트 판다이다. 국내 최초 아기 판다인 푸바오의 엄마이며, 아빠인 러바오와는 달리 푸바오의 육아를 직접 담당한다.
+                태어났을 당시 이름은 화니(华呢)였고, 현재 아이바오는 ‘사랑스러운 보물’이라는 뜻이다. <br><br>
+                러바오보다 국내에는 훨씬 더 먼저 알려졌는데, 판다 극장에서 소꿉친구인 화양(华阳)과 함께 아기 판다였던 시절이 공개된 적이 있다. 그때도 깜찍하다! <br><br>
+                매우 예쁜 외모의 소유자여서 판다계 절세 미녀로 통하고 있다. 흑백이 선명한 털 색깔에 또렷한 눈매와 이목구비, 초롱초롱한 눈빛이 아이바오의 미모를 더욱 돋보이게 만드는 요소이다. <br>
+                미키 마우스같은 동글한 귀도 귀여운 포인트이다. 먹는 모습도 굉장히 복스럽고, 워토우를 정말 맛있게 먹는다.</p>
+        </div>
+    </aside>
+    <footer>
+        <br><br>
+        Copyright ⓒ2023 PANDA ZZANG rights reserved</footer>
+</body>
+</body>
+
+</html>

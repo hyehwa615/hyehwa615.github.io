@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SUB 1</title>
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./footer.css">
+  <style>
+    @font-face {
+      font-family: 'SUITE-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'SUITE-Regular';
+      text-align: justify;
+    }
+
+    .content {
+      display: block;
+      width: 50%;
+      line-height: 180%;
+      margin: 135px auto;
+      /* 필수닷,,, ! */
+    }
+
+    .btn {
+      font-family: 'SUITE-Regular';
+      background-color: #fff;
+      text-align: left;
+      border: none;
+
+      font-size: 20px;
+      position: relative;
+    }
+
+    .btn::before {
+      transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      content: "";
+      width: 0%;
+      height: 100%;
+      background: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .btn .btn-text {
+      color: white;
+      mix-blend-mode: difference;
+    }
+
+    .btn:hover::before {
+      background: black;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <div class="header">
+    <ul>
+      <li class="logo"><a href="index.html"><img src="panda.png" width="70px"></a></li>
+      <li><a href="sub1.html">판다</a></li>
+      <li><a href="sub2.html">판다 월드</a></li>
+      <li><a href="sub3.html">판다 월드 멤버</a></li>
+      <li><a href="sub4.html">판다 티엠아이</a></li>
+      <li><a href="sub5.html">판다 갤러리</a></li>
+    </ul>
+  </div>
+
+
+  <div class="content">
+    <img src="panda_sub1.jpg" width="600px">
+    <br><br>
+    <div class="container">
+      <button class="btn"><span class="btn-text">· 판다란?</span></button>
+      <ol>
+        <li>판다, 판다곰, 팬더, 대왕판다, 자이언트 판다라고도 부른다.</li>
+        <li>판다 주종은 중국 쓰촨성을 중심으로 분포해 있다. </li>
+        <li>곰과의 동물이다 보니 전형적인 육식 동물의 소화기관을 가지고 있지만, 진화의 과정을 거치며 초식 동물이 되었다. </li>
+        <li>판다의 주식은 대나무이며, 간식으로는 곡물과 계란을 섞은 빵인 워토우나 사과, 바나나, 당근 등을 먹는다.</li>
+        <li>과일 같은 부수적인 영양 보충 없이 대나무만 먹는 등 극도의 편식을 하는데도 영양 결핍 없이 잘 사는데, 이는 같은 대나무라도 철마다 종류나 먹는 부위를 달리 해서 영양소 균형을 맞추기
+          때문이다.
+        </li>
+      </ol>
+      <br> <br>
+      <button class="btn"><span class="btn-text">· 판다의 특성</span></button>
+      <ol>
+        <li>판다는 곰과 대부분처럼 군집이 아니라 단독 생활을 한다. </li>
+        <li> 판다는 오줌을 뿌리거나 혹은 항문을 나무에 긁어서 자기의 영역을 표시하는데, 다른 개체가 자기의 영역에 들어오는 것을 매우 싫어한다.</li>
+        <li>새끼든 성체든 외모 및 울음 소리가 귀여운 데다가 초식 동물로서, 흔히 떠올리는 곰에 비해 성격이 온순하다. 특히 새끼들은 사람을 상당히 잘 따르며, 유튜브를 찾아 보면 사육사들과 장난치는 아기
+          판다들의
+          동영상이 상당히 많다. </li>
+      </ol>
+    </div>
+  </div>
+  <footer>
+    <br><br>
+    Copyright ⓒ2023 PANDA ZZANG rights reserved</footer>
+</body>
+
+</html>

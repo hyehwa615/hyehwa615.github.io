@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUB 3_2</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <style>
+        @font-face {
+            font-family: 'SUITE-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            overflow: hidden;
+            background-size: cover;
+            position: fixed;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-family: 'SUITE-Regular';            
+        }
+
+        h1,
+        h2 {
+            font-weight: 500;
+            margin: 0px 0px 5px 0px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
+            margin: 10px;
+            text-align: justify;
+            color: #fff;
+        }
+        
+        img {
+            border-radius: 10px;
+        }
+
+        .profile-card {
+            width: 50px;
+            height: 156px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 2;
+            overflow: hidden;
+            opacity: 0;
+            margin-top: 50px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            animation: init 1.5s 0.2s cubic-bezier(0.55, 0.055, 0.275, 0.19) forwards, materia 0.5s .9s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+        }
+
+        .profile-card header {
+            width: 160px;
+            height: 180px;
+            display: inline-block;
+            border-right: 2px dashed #EEEEEE;
+            background: #000;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .profile-card header h1 {
+            color: #fff;
+        }
+
+        .profile-card header a {
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            margin: -15px 20px;
+        }
+
+        .profile-card header a>img {
+            max-width: 100%;
+        }
+
+        .profile-card .profile-bio {
+            width: 70%;
+            height: 70%;
+            line-height: 170%;
+            display: inline-block;
+            background: #000;
+            padding: 0px 0px 10px 0px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        @keyframes init {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+
+            100% {
+                width: 36px;
+                height: 36px;
+                margin-top: 0px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes materia {
+            0% {
+                background: #000;
+            }
+
+            50% {
+                border-radius: 10px;
+            }
+
+            100% {
+                width: 500px;
+                height: 300px;
+                background: #000;
+                border-radius: 10px;
+            }
+        }
+
+        @keyframes moveIn {
+            0% {
+                margin-top: 50px;
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+                margin-top: -20px;
+            }
+        }
+
+        @media screen and (min-aspect-ratio: 4/3) {
+            body {
+                background-size: cover;
+            }
+
+            body:before {
+                width: 0px;
+            }
+
+            @-webkit-keyframes puff {
+                0% {
+                    top: 100%;
+                    width: 0px;
+                    padding-bottom: 0px;
+                }
+
+                100% {
+                    top: 50%;
+                    width: 100%;
+                    padding-bottom: 100%;
+                }
+            }
+
+            @keyframes puff {
+                0% {
+                    top: 100%;
+                    width: 0px;
+                    padding-bottom: 0px;
+                }
+
+                100% {
+                    top: 50%;
+                    width: 100%;
+                    padding-bottom: 100%;
+                }
+            }
+
+            @media screen and (max-width: 460px) {
+                .profile-card header {
+                    width: auto;
+                    height: auto;
+                    display: block;
+                    float: none;
+                    border-right: none;
+                }
+
+                .profile-card header a>img {
+                    width: 150px;
+                }
+
+                .profile-card .profile-bio {
+                    width: auto;
+                    height: auto;
+                    display: block;
+                    float: none;
+                }
+            }
+
+            @keyframes materia {
+                0% {
+                    background: #000;
+                }
+
+                50% {
+                    border-radius: 4px;
+                }
+
+                100% {
+                    width: 40%;
+                    height: 40%;
+                    background: #000;
+                    border-radius: 4px;
+                }
+            }
+
+            @media screen and (max-width: 360px) {
+
+                .profile-card header a>img {
+                    width: 100px;
+                }
+
+                .profile-card .profile-bio {
+                    width: auto;
+                    height: auto;
+                    display: block;
+                    float: none;
+                }
+
+                @keyframes materia {
+                    0% {
+                        background: #000;
+                    }
+
+                    50% {
+                        border-radius: 4px;
+                    }
+
+                    100% {
+                        width: 40%;
+                        height: 40%;
+                        background: #000;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+        
+        
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	margin-top: auto;
+}
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div class="header">
+        <ul>
+            <li class="logo"><a href="index.html"><img src="panda.png" width="70px"></a></li>
+            <li><a href="sub1.html">판다</a></li>
+            <li><a href="sub2.html">판다 월드</a></li>
+            <li><a href="sub3.html">판다 월드 멤버</a></li>
+            <li><a href="sub4.html">판다 티엠아이</a></li>
+            <li><a href="sub5.html">판다 갤러리</a></li>
+        </ul>
+    </div>
+    <aside class="profile-card">
+        <header>
+            <a><img src="fubao1.jpg" width="100px"></a>
+            <h1>푸바오</h1>
+            <h2>2세</h2>
+        </header>
+        <div class="profile-bio">
+            <p>앙증맞은/널업으면/하얀구름/몽글몽글/푹신푹신/왕솜사탕/둥가둥가/깨물깨물/뚠실뚠실/궁디팡팡/오늘도난/행복충전
+                <br>
+                ―송영관 사육사 브런치 中 <br><br> 
+                2020년 7월 20일에 대한민국 최초로 자연 분만으로 태어난 자이언트 판다이다. 이름은 ‘행복을 주는 보물’이라는 뜻이다. <br>
+                밖에서 노는 것을 좋아해서 판다 월드 운영 시간이 끝나면 다시 안으로 들어가는 걸 몸서리칠 정도로 싫어하고, 그때마다 항상 나무 위로 도망가거나
+                평상에 모짜렐라 치즈처럼 축 늘어져서 안 움직이려 한다. <br>
+                흙에 뒹구면서 놀다보니 등이 조금 누렇다. 그래서 흙곰이라는 별명이 있다. (엄마 아이바오의 하얀 등 색과 정말 다르다.) <br>
+                2021/년 7월 20일에 첫 돌을 맞아 푸바오의 돌 잔치가 열렸고, 에버랜드 유튜브 채널을 통해 방송되었다. 돌잡이로 행복을 뜻하는 워토우를 집었다. 귀여운 말괄량이 공주님이다.</p>
+        </div>
+    </aside>
+    <footer>
+        <br><br>
+        Copyright ⓒ2023 PANDA ZZANG rights reserved</footer>
+</body>
+</body>
+
+</html>

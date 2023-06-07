@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SUB 5</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <style>
+        @font-face {
+            font-family: 'SUITE-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'SUITE-Regular';
+            margin-top: 135px;
+        }
+
+        .grid-container {
+            columns: 5 200px;
+            column-gap: 1.5rem;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .grid-container div {
+            width: 150px;
+            margin: 0 1.5rem 1.5rem 0;
+            display: inline-block;
+            width: 100%;
+            border: solid 1.5px #000;
+            padding: 5px;
+            border-radius: 5px;
+            transition: all 0.25s ease-in-out;
+        }
+
+        .grid-container div:hover img {
+            filter: grayscale(0);
+        }
+
+        .grid-container div img {
+            width: 100%;
+            filter: grayscale(100%);
+            border-radius: 5px;
+            transition: all 0.25s ease-in-out;
+        }
+
+        .grid-container div p {
+            margin: 5px 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div class="header">
+        <ul>
+            <li class="logo"><a href="index.html"><img src="panda.png" width="70px"></a></li>
+            <li><a href="sub1.html">판다</a></li>
+            <li><a href="sub2.html">판다 월드</a></li>
+            <li><a href="sub3.html">판다 월드 멤버</a></li>
+            <li><a href="sub4.html">판다 티엠아이</a></li>
+            <li><a href="sub5.html">판다 갤러리</a></li>
+        </ul>
+    </div>
+
+    <div class="grid-container">
+        <div>
+            <img class='grid-item grid-item-1' src='1.jpg' alt=''>
+            <p>푸바오 돌잔치. 🎉</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-2' src='2.jpg' alt=''>
+            <p>나무 타는 중…</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-3' src='3.jpg' alt=''>
+            <p>높아도 거뜬해요!</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-4' src='4.jpg' alt=''>
+            <p>행복을 주는 보물. 🥳</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-5' src='8.jpg' alt=''>
+            <p>아기 판다 푸바오!</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-6' src='6.jpg' alt=''>
+            <p>엄마랑 함께… 🎈</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-7' src='7.jpg' alt=''>
+            <p>세상이 신기해요.</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-8' src='5.jpg' alt=''>
+            <p>2살! 🎊</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-9' src='9.jpg' alt=''>
+            <p>많이 어렸던 시절!</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-10' src='10.jpg' alt=''>
+            <p>푸바오 책이 나왔어요. 👏</p>
+        </div>
+    </div>
+
+    <br><br>
+    <footer>
+        <br><br>
+        Copyright ⓒ2023 PANDA ZZANG rights reserved</footer>
+</body>
+
+</html>
